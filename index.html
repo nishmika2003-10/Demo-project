@@ -1,0 +1,168 @@
+
+<table border="1">
+  <caption style="caption-side: bottom;">Source: Company Annual Report 2025</caption>
+  <tr><th>Quarter</th><th>Revenue</th></tr>
+  <tr><td>Q1</td><td>$500K</td></tr>
+  <tr><td>Q2</td><td>$620K</td></tr>
+</table>
+<table border="5">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nishmika</td>
+    <td>22</td>
+    <td>Chennai</td>
+  </tr>
+  <tr>
+    <td>Ravi</td>
+    <td>23</td>
+    <td>Coimbatore</td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="2">Total Students</td>
+    <td>2</td>
+  </tr>
+</tfoot>
+<tr>
+  <td rowspan="2" colspan="2">A</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>C</td>
+</tr>
+
+</table>
+
+<iframe src="check.html" width="400" height="200"></iframe>
+
+
+<img src="C:\Users\Nishmika\Desktop\dem.png" alt="Sunrise view" width="400" height="250">
+
+<article>
+  <h2>How to Learn HTML</h2>
+  <p>HTML stands for HyperText Markup Language. It is used to create web pages.</p>
+</article>
+<select name="city">
+  <option value="chennai">Chennai</option>
+  <option value="mumbai" selected>Mumbai</option>
+  <option value="delhi">Delhi</option>
+</select>
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Chrome">chrome</option>
+  <option value="Firefox">
+  <option value="Edge">
+</datalist>
+<meter value="0.7" min="0" max="1">70%</meter>
+<input type="range" min="0" max="100">
+<form oninput="res.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="number" name="a"> +
+  <input type="number" name="b"> =
+  <output name="res"></output>
+</form>
+<progress value="70" max="100"></progress>
+<meter value="0.7" min="0" max="1">70%</meter>
+<input type="datetime-local">
+<input value="Nishmika">
+<input type="button" value="Click Me">
+<input type="radio" name="gender" value="male">
+<label for="user">Username:</label>
+<input type="text" id="user" name="username">
+
+<input type="hidden" value="userID123">
+<select name="city">
+  <option value="chennai">Chennai</option>
+  <option value="mumbai" selected>Mumbai</option>
+  <option value="delhi">Delhi</option>
+</select>
+<label>Select your favorite cities:</label><br>
+<select name="cities" multiple>
+  <option value="chennai">Chennai</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="delhi">Delhi</option>
+  <option value="pune">Pune</option>
+</select>
+<label>Choose your city:</label><br>
+<select name="city" size="3">
+  <option value="chennai">Chennai</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="delhi">Delhi</option>
+  <option value="pune">Pune</option>
+</select>
+<label>Choose your city:</label><br>
+<select name="city">
+  <option value="chennai">Chennai</option>
+  <option value="mumbai" disabled>Mumbai (unavailable)</option>
+  <option value="delhi">Delhi</option>
+</select>
+
+<label>Select your city:</label><br>
+<select name="city">
+  <optgroup label="South India">
+    <option value="chennai">Chennai</option>
+    <option value="bangalore">Bangalore</option>
+    <option value="hyderabad">Hyderabad</option>
+  </optgroup>
+  
+  <optgroup label="North India">
+    <option value="delhi">Delhi</option>
+    <option value="lucknow">Lucknow</option>
+    <option value="chandigarh">Chandigarh</option>
+  </optgroup>
+</select>
+<form action="/search">
+  <input type="search" name="query" placeholder="Search here...">
+  <button type="submit">Search</button>
+</form>
+<iframe src="check.html" style="border:50px solid black;"></iframe>
+
+<script>
+console.log(a);
+var a = 10;
+
+</script>
+<form name="userForm">
+  <input type="text" name="username" value="Nishmika">
+  <input type="number" name="age" value="21">
+</form>
+
+<script>
+let form = document.userForm;
+console.log(form);                 // 👉 logs the entire form element
+console.log(form.username.value);  // 👉 "Nishmika"
+console.log(form.age.value);       // 👉 "21"
+</script>
+<form name="demoForm">
+  Message: <input type="text" name="msg" value="Welcome!"><br><br>
+  <button type="button" onclick="demo()">Try Methods</button>
+</form>
+
+<script>
+function demo() {
+  let box = document.demoForm.msg;
+
+  box.focus(); // brings cursor to the field
+  setTimeout(() => {
+    box.select(); // highlights the text
+  }, 1000);
+
+  setTimeout(() => {
+    box.blur(); // removes cursor focus
+  }, 2000);
+}
+</script>
+<form>
+  <input type="text" value="Type here"
+         onfocus="this.style.background='lightyellow'"
+         onblur="this.style.background='white'"
+         onchange="alert('Value changed to: ' + this.value)"
+         onselect="alert('You selected text!')">
+</form>
